@@ -2,7 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: gps-hw
-creation_date: 2025-09-01T21:42:25.734-07:00[America/Los_Angeles]
+creation_date: 2025-09-02T08:23:35.548-07:00[America/Los_Angeles]
 operating_system: Mac OS X
 mcc_mode: IDE
 mcc_mode_version: v6.25
@@ -10,7 +10,7 @@ device_name: PIC24FJ256GA705
 compiler: XC16 2.10
 mcc_version: 5.5.2
 mcc_core_version: 5.7.1
-content_manager_version: 5.0.0
+content_manager_version: 5.0.1
 is_mcc_offline: false
 is_using_prerelease_versions: false
 mcc_content_registries: https://registry.npmjs.org/

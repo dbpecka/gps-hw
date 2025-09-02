@@ -54,7 +54,7 @@
 #define FCY (_XTAL_FREQ/2)
 #include <libpic30.h>
 
-#define HTTP_URL "http://example.com/position"
+#define HTTP_URL "http://gps-api.sailalacrity.com/api/device/checkin"
 
 static void BG95_SendString(const char *s)
 {
@@ -140,8 +140,8 @@ int main(void)
         // Toggle RA4 each reporting cycle
         LATAbits.LATA4 ^= 1;
 
-        BG95_GetPosition(position, sizeof(position));
-        BG95_PostPosition(position);
+        //BG95_GetPosition(position, sizeof(position));
+        //BG95_PostPosition(position);
         SleepOneMinute();
     }
 
