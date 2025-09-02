@@ -129,9 +129,16 @@ int main(void)
     // initialize the device
     SYSTEM_Initialize();
 
+    // Configure RA4 as digital output for loop activity indication
+    TRISAbits.TRISA4 = 0;
+    LATAbits.LATA4 = 0;
+
     while (1)
     {
         char position[64];
+
+        // Toggle RA4 each reporting cycle
+        LATAbits.LATA4 ^= 1;
 
         BG95_GetPosition(position, sizeof(position));
         BG95_PostPosition(position);
