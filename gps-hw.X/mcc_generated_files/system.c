@@ -73,7 +73,7 @@
 // FWDT
 #pragma config WDTPS = PS32768    //Watchdog Timer Postscaler bits->1:32768
 #pragma config FWPSA = PR128    //Watchdog Timer Prescaler bit->1:128
-#pragma config FWDTEN = OFF    //Watchdog Timer Enable bits->WDT and SWDTEN disabled
+#pragma config FWDTEN = ON_SWDTEN    //Watchdog Timer Enable bits->WDT is disabled; controlled by SWDTEN bit
 #pragma config WINDIS = OFF    //Watchdog Timer Window Enable bit->Watchdog Timer in Non-Window mode
 #pragma config WDTWIN = WIN25    //Watchdog Timer Window Select bits->WDT Window is 25% of WDT period
 #pragma config WDTCMX = WDTCLK    //WDT MUX Source Select bits->WDT clock source is determined by the WDTCLK Configuration bits
